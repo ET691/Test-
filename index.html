@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرهنات - نظام الرهن الإلكتروني</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">مرهنات</a>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#how-it-works">كيف يعمل</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button id="loginBtn" class="btn">تسجيل الدخول</button>
+                <button id="registerBtn" class="btn btn-primary">تسجيل جديد</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الرئيسية -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>نظام الرهن الإلكتروني الآمن</h1>
+                <p>احصل على قرض سريع بضمان ذهبك أو ممتلكاتك الثمينة بأمان وسهولة</p>
+                <button id="startPawnBtn" class="btn btn-primary btn-large">ابدأ عملية الرهن الآن</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/pawn-hero.png" alt="مرهنات">
+            </div>
+        </div>
+    </section>
+
+    <!-- كيف يعمل -->
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2 class="section-title">كيف يعمل نظام مرهنات؟</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <h3>1. تقييم العنصر</h3>
+                    <p>قم بوصف العنصر المراد رهنه وسنقوم بتقييم قيمته</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>2. قبول العرض</h3>
+                    <p>سنقدم لك عرضاً بناء على التقييم، يمكنك قبوله أو رفضه</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-wallet"></i></div>
+                    <h3>3. استلام المبلغ</h3>
+                    <p>بعد الموافقة، سيتم تحويل المبلغ إلى محفظتك الإلكترونية فوراً</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-redo"></i></div>
+                    <h3>4. استرداد العنصر</h3>
+                    <p>عند سداد القرض، يمكنك استرداد العنصر المرهون</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- خدماتنا -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services">
+                <div class="service-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>رهن الذهب</h3>
+                    <p>احصل على قرض سريع بضمان ذهبك مع تقييم عادل</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>رهن الأجهزة</h3>
+                    <p>رهن أجهزتك الإلكترونية مقابل قرض سريع</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>رهن المركبات</h3>
+                    <p>خدمة رهن المركبات بمختلف أنواعها</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- طرق الدفع -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">طرق الدفع المتاحة</h2>
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <img src="images/etisalat-cash.png" alt="اتصالات كاش">
+                    <h3>اتصالات كاش</h3>
+                </div>
+                <div class="payment-method">
+                    <img src="images/vodafone-cash.png" alt="فودافون كاش">
+                    <h3>فودافون كاش</h3>
+                </div>
+                <div class="payment-method">
+                    <img src="images/orange-money.png" alt="أورنج موني">
+                    <h3>أورنج موني</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج اتصال -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="اسمك" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="بريدك الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="رقم هاتفك">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="رسالتك" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>مرهنات</h3>
+                    <p>نظام الرهن الإلكتروني الآمن الذي يمكنك من الحصول على قرض سريع بضمان ممتلكاتك الثمينة.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#how-it-works">كيف يعمل</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>اتصل بنا</h3>
+                    <p><i class="fas fa-phone"></i> 0123456789</p>
+                    <p><i class="fas fa-envelope"></i> info@marhinat.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 مرهنات. جميع الحقوق محفوظة.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- نافذة تسجيل الدخول -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>تسجيل الدخول</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" id="loginEmail" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPassword" placeholder="كلمة المرور" required>
+                </div>
+                <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+            </form>
+            <p class="auth-switch">ليس لديك حساب؟ <a href="#" id="showRegister">سجل الآن</a></p>
+        </div>
+    </div>
+
+    <!-- نافذة التسجيل -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>تسجيل جديد</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <input type="text" id="registerName" placeholder="الاسم الكامل" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="registerEmail" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="registerPhone" placeholder="رقم الهاتف" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerPassword" placeholder="كلمة المرور" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerConfirmPassword" placeholder="تأكيد كلمة المرور" required>
+                </div>
+                <button type="submit" class="btn btn-primary">تسجيل</button>
+            </form>
+            <p class="auth-switch">لديك حساب بالفعل؟ <a href="#" id="showLogin">تسجيل الدخول</a></p>
+        </div>
+    </div>
+
+    <!-- نافذة بدء الرهن -->
+    <div id="pawnModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>بدء عملية الرهن</h2>
+            <form id="pawnForm">
+                <div class="form-group">
+                    <label for="itemType">نوع العنصر</label>
+                    <select id="itemType" required>
+                        <option value="">اختر نوع العنصر</option>
+                        <option value="gold">ذهب</option>
+                        <option value="electronics">أجهزة إلكترونية</option>
+                        <option value="vehicles">مركبات</option>
+                        <option value="other">أخرى</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="itemDescription">وصف العنصر</label>
+                    <textarea id="itemDescription" placeholder="وصف مفصل للعنصر المراد رهنه" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="itemValue">القيمة التقديرية (اختياري)</label>
+                    <input type="number" id="itemValue" placeholder="القيمة التقديرية للعنصر">
+                </div>
+                <div class="form-group">
+                    <label for="loanAmount">المبلغ المطلوب</label>
+                    <input type="number" id="loanAmount" placeholder="المبلغ الذي ترغب في الحصول عليه" required>
+                </div>
+                <button type="submit" class="btn btn-primary">تقديم الطلب</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- نافذة الدفع -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>إتمام الدفع</h2>
+            <div class="payment-details">
+                <p>المبلغ المطلوب: <span id="paymentAmount">5000</span> جنيه</p>
+                <p>رسوم الخدمة: <span id="paymentFees">50</span> جنيه</p>
+                <p>المبلغ الإجمالي: <span id="paymentTotal">5050</span> جنيه</p>
+            </div>
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="paymentMethod">طريقة الدفع</label>
+                    <select id="paymentMethod" required>
+                        <option value="">اختر طريقة الدفع</option>
+                        <option value="etisalat">اتصالات كاش</option>
+                        <option value="vodafone">فودافون كاش</option>
+                        <option value="orange">أورنج موني</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="walletNumber">رقم المحفظة</label>
+                    <input type="tel" id="walletNumber" placeholder="رقم الهاتف المرتبط بالمحفظة" required>
+                </div>
+                <button type="submit" class="btn btn-primary">إتمام الدفع</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>
